@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  font-family: "Roboto", sans-serif;
+  background: #2f3444;
+  padding-bottom: 1rem;
+  overflow-x: hidden;
+}
+
+.main-header {
+  width: 100%;
+  text-align: center;
+  padding: 0.5%;
+  background-color: #282c39;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main-header h1 {
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: 2rem;
+}
+.main-header h1 span {
+  color: #298eea;
+}
+.main-header i {
+  font-size: 2rem;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.main-container {
+  width: 92%;
+  margin: 50px auto;
+  padding: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #343a4b;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 18px 0px #343A4B;
+          box-shadow: 5px 5px 18px 0px #343A4B;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.main-container .single-movie {
+  float: left;
+  margin: 1rem;
+  width: 230px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-radius: 5px;
+}
+.main-container .single-movie:hover {
+  -webkit-box-shadow: 7px 7px 16px -7px #343A4B;
+          box-shadow: 7px 7px 16px -7px #343A4B;
+}
+
+.img-div {
+  width: 95%;
+  margin: 0rem auto;
+}
+.img-div img {
+  width: 75%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  -webkit-transition: -webkit-transform 0.7s ease-in-out;
+  transition: -webkit-transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out;
+}
+.img-div img:hover {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+
+.movie-info {
+  padding: 1%;
+}
+.movie-info h2 {
+  font-size: 1rem;
+  font-style: italic;
+  color: #298eea;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.movie-info h2:hover {
+  color: #ffcc33;
+}
+.movie-info .desc {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: bold;
+}
+.movie-info .price {
+  margin: 0.4rem 0;
+  font-weight: bold;
+  color: #298eea;
+}
+.movie-info .price-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0.5rem;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.total-sum-div {
+  margin: 0 1rem;
+}
+.total-sum-div h2 {
+  color: #298eea;
+}
+.total-sum-div span {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.totalSum {
+  margin: 0 1.5rem;
+  color: #298eea;
+}
+.totalSum span {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.price-container {
+  width: 92%;
+  margin: 50px auto;
+  padding: 1%;
+  border: 1px solid #343a4b;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 18px 0px #343A4B;
+          box-shadow: 5px 5px 18px 0px #343A4B;
+  display: none;
+}
+
+.movie-div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(0, 1fr))[3];
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: 1%;
+}
+.movie-div p {
+  font-weight: 700;
+  color: #298eea;
+  text-align: center;
+}
+.movie-div .remove-btn {
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  background: none;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 1% 0.5%;
+  cursor: pointer;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}

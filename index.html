@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/logo.png"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Filmovizija</title>
+</head>
+<body>
+    <header class="main-header">
+        <h1><span>Filmovi</span>zija</h1>
+        <i id="cart" class="bi bi-cart"></i>
+    </header>
+
+    <div class="main-container clearfix">
+        <div class="single-movie">
+            <div class="img-div">
+                <img src="img/all-eyes-on-me.jpg" alt="all-eyes-one-me">
+            </div>
+            <div class="movie-info">
+                <h2 onclick='movieFunc(this)' title="Click to watch">All Eyes On Me</h2>
+                <p class="desc">ALL EYEZ ON ME chronicles Tupac Shakur's life and legacy including his rise to superstardom...</p>
+                    <p class="price">$100</p>
+            </div>
+        </div>
+        <div class="single-movie">
+            <div class="img-div">
+                <img src="img/boyzNthehood.jpg" alt="boyzNthehood">
+            </div>
+            <div class="movie-info">
+                <h2 onclick='movieFunc(this)' title="Click to watch">Boyz N the Hood</h2>
+                <p class="desc">A high school student living with his stern, loving father in South Central Los Angeles g...</p>
+                    <p class="price">$60</p>
+            </div>
+        </div>
+        <div class="single-movie">
+            <div class="img-div">
+                <img src="img/southpaw.jpg" alt="southpaw">
+            </div>
+            <div class="movie-info">
+                <h2 onclick='movieFunc(this)' title="Click to watch">Southpaw</h2>
+                <p class="desc">After a fatal incident sends him on a rampant path of destruction, a champion boxer fights...</p>
+                    <p class="price">$50</p>
+            </div>
+        </div>
+        <div class="single-movie">
+            <div class="img-div">
+                <img src="img/conjuring.jpg" alt="conjuring">
+            </div>
+            <div class="movie-info">
+                <h2 onclick='movieFunc(this)' title="Click to watch">Conjuring</h2>
+                <p class="desc">Paranormal investigators Ed and Lorraine Warren work to help a family terrorized by a dark...</p>
+                    <p class="price">$110</p>
+            </div>
+        </div>
+        <div class="single-movie">
+            <div class="img-div">
+                <img src="img/cabin.jpg" alt="The Cabin in the Woods">
+            </div>
+            <div class="movie-info">
+                <h2 onclick='movieFunc(this)' title="Click to watch">The Cabin in the Woods</h2>
+                <p class="desc">A rambunctious group of five college friends steal away for a weekend of debauchery in...</p>
+                    <p class="price">$40</p>
+            </div>
+        </div>
+        <div class="single-movie">
+            <div class="img-div">
+                <img src="img/split.jfif" alt="Split">
+            </div>
+            <div class="movie-info">
+                <h2 onclick='movieFunc(this)' title="Click to watch">Split</h2>
+                <p class="desc">Kevin Wendell Crumb, a man with 23 different personalities, abducts and keeps three teenage...</p>
+                    <p class="price">$30</p>
+            </div>
+        </div>
+        <div class="single-movie">
+            <div class="img-div">
+                <img src="img/cops.jpg" alt="Let's be cops">
+            </div>
+            <div class="movie-info">
+                <h2 onclick='movieFunc(this)' title="Click to watch">Let's be cops</h2>
+                <p class="desc">Two struggling pals dress as police officers for a costume party and become neighborhood sensations....</p>
+                    <p class="price">$50</p>
+            </div>
+        </div>
+        <div class="single-movie">
+            <div class="img-div">
+                <img src="img/haunted.jpg" alt="A Haunted House">
+            </div>
+            <div class="movie-info">
+                <h2 onclick='movieFunc(this)' title="Click to watch">A Haunted House</h2>
+                <p class="desc">Malcolm and Kisha move into their dream home, then learn that a demon also resides there....</p>
+                    <p class="price">$70</p>
+            </div>
+        </div>
+        <div class="single-movie">
+            <div class="img-div">
+                <img src="img/joker.jfif" alt="Joker">
+            </div>
+            <div class="movie-info">
+                <h2 onclick='movieFunc(this)' title="Click to watch">Joker</h2>
+                <p class="desc">A mentally troubled stand-up comedian embarks on a downward spiral that leads to the creati...</p>
+                    <p class="price">$45</p>
+            </div>
+        </div>
+        <div class="single-movie">
+            <div class="img-div">
+                <img src="img/scarface.jpg" alt="Scarface">
+            </div>
+            <div class="movie-info">
+                <h2 onclick='movieFunc(this)' title="Click to watch">Scarface</h2>
+                <p class="desc">Cuban refugee Tony Montana (Al Pacino), who arrives penniless in Miami during the Mariel boatlift...</p>
+                    <p class="price">$75</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="price-container">
+        <div class="total-sum-div">
+
+        </div>
+        <h2 class="totalSum">Total : $<span>0</span>  </h2>
+    </div>
+
+
+    
+    <script src="main.js"></script>
+</body>
+</html>
